@@ -1,4 +1,16 @@
 @import url(./reset.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+/* General */
+
+:root {
+    --grid-column-structure: [grid-start] 20vw [main-width] 1fr [grid-end] 20vw [end-line]; 
+    --gap-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url(../img/bg.jpg);
@@ -7,19 +19,62 @@ body {
     background-attachment: fixed;
 
     font-size: 16px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: var(--grid-column-structure);
+    grid-row-gap: 6vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* Grid containers */
+
+.max-width-container {
+    grid-column: main-width;
 
 }
+
+.full-width-container {
+    grid-column-start: grid-start;
+    grid-column-end: end-line;
+
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: var(--grid-column-structure);
+}
+
+
+/* Header */
 
 header {
     position: fixed;
-    height: 5vh;
     background: #000;
+    color: white;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner-wrapper {
+    grid-column-start: grid-start;
+    grid-column-end: end-line;
+
     margin-top: 5vh;
     position: relative;
     min-height: 30rem;
@@ -29,6 +84,102 @@ header {
 
 .banner-video {
 
-   
+}
 
+.banner-article-wrapper {
+    position: absolute;
+    z-index: 5;
+
+   bottom: 50%;
+    left: 0;
+   right: 0; 
+}
+
+.banner-article {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+
+}
+
+.banner-article > h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+/* Main-article */
+
+.main-article {
+
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: main-width;
+}
+
+.main-article > h2 {
+    font-size: 1.4em;
+}
+
+.main-article > p {
+    text-align: center;
+}
+
+/* Card section */
+
+
+.card-wrapper, .feedback-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--gap-size);
+
+}
+.card {
+    background-color: white;
+    border: 1px solid red;
+    padding: var(--gap-size);
+}
+
+/* Parallax section */
+
+.paralax-wrapper {
+    background-color: rgb(146, 10, 10);
+}
+
+
+/* Feedback section */
+
+.footer {
+    background-color: #111111;
+    color: white;
+}
+
+.feedback-card-wrapper {
+  
+}
+
+.feedback-card {
+    background-color: white;
+    border: 1px solid red;
+    padding: var(--gap-size);
+}
+
+/* Footer section */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 45% 35% 20%;
+    grid-gap: var(--gap-size)
+}
+
+.footer-credits {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
 }
