@@ -17,18 +17,161 @@ header {
     left: 0;
     right: 0;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
 }
 
 .banner-wrapper {
     margin-top: 5vh;
     position: relative;
     min-height: 30rem;
-    max-height: 35rem;
+    max-height: 32rem;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .banner-video {
 
    
 
+}
+
+.menu {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+
+
+/*.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12vw;
+    background-color: rgb(209, 24, 24);
+    height: 100vh;
+    overflow: hidden;
+        text-decoration: none;
+
+}
+
+.menu:hover .nav{
+    height: 100%;
+    overflow: hidden;
+
+}
+*/
+
+
+.banner-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+
+    
+}
+
+.banner-article>h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+}
+.banner-article>p {
+    font-size: 1.5rem;
+}
+
+.technology-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.main-article {
+    grid-column: 1;
+    grid-column-end: 4;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.card-wrapper {
+    grid-column: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    grid-template-rows: 11rem 11rem;
+    text-align: center;
+    gap: 20px;
+    
+
+    
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.card3 {
+    grid-column: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.card4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.card5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.card6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.card {
+    background-color: white;
+    border: 2px solid red;
+    height: 10rem;
 }
