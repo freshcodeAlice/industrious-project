@@ -10,7 +10,15 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Industrious</a>
-        <nav>Menu</nav>
+        <nav class="menu">
+            <input type="checkbox" class="menu-checkbox"name="" id="">
+            <a href="#" class="menu-link">Menu</a>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Generic</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="banner-wrapper">
         <video autoplay loop muted class="banner-video">
@@ -18,7 +26,7 @@
 
             <!--TODO: optimize video formats-->
         </video>
-        <article class="banner-article">
+        <article class="banner-article max-width">
             <h1>INDUSTRIOUS</h1>
             <p>A responsive business oriented template with a video background
                 designed by TEMPLATED and released under the Creative Commons License.</p>

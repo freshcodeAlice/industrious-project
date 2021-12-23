@@ -1,34 +1,161 @@
 @import url(./reset.css);
 
+/*Fonts*/
+/*font-family: "Raleway", sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap");
+
+/*
+    Mobile        mb 	    ≤700px
+    Tablet        tb 	    ≤1200px
+    Desktop 	    ds 	    >1200px
+*/
+
+:root {
+  font-family: "Raleway", sans-serif;
+}
+
 body {
-    background-image: url(../img/bg.jpg);
-    background-color: #ffffffcc;
-    background-blend-mode: overlay;
-    background-attachment: fixed;
+  background-image: url(../img/bg.jpg);
+  background-color: #ffffff8f;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  height: 300vh;
+}
 
-    font-size: 16px;
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
 
+@media screen and ((min-width: 701px) and (max-width:1200)) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 header {
-    position: fixed;
-    height: 5vh;
-    background: #000;
-    left: 0;
-    right: 0;
-    top: 0;
+  position: fixed;
+  height: 5vh;
+  background: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  z-index: 1;
 }
 
+.logo {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  font-size: inherit;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.menu {
+  color: rgba(135, 135, 135, 0.871);
+  /* width: 25rem; */
+}
+
+.menu-link,
+.menu-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-link:hover,
+.menu-list a:hover {
+  color: #fff;
+}
+
+.menu-link {
+  padding: 1.25rem;
+  line-height: inherit;
+  text-align: end;
+}
+
+.menu-link::before {
+  content: "III";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-right: 0.5em;
+}
+
+.menu-checkbox {
+}
+
+.menu-list {
+  /* display: none; */
+  display: block;
+
+  background-color: #000;
+
+  position: fixed;
+
+  right: 0;
+
+  background-color: inherit;
+  z-index: 3000;
+}
+
+/* .menu-link:focus ~ .menu-list {
+} */
+
 .banner-wrapper {
-    margin-top: 5vh;
-    position: relative;
+  margin-top: 5vh;
+  position: relative;
+  min-height: 25rem;
+  max-height: 30%;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .banner-wrapper {
     min-height: 30rem;
     max-height: 35rem;
-    overflow: hidden;
+  }
 }
 
 .banner-video {
+  display: none;
+}
 
-   
+@media screen and (min-width: 700px) {
+  .banner-video {
+    display: block;
+    transform: translateX(50%) translateY(50%);
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    height: auto;
+    width: 100%;
+  }
+}
 
+.banner-article {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.max-width {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
