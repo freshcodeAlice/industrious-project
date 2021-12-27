@@ -11,29 +11,33 @@
     <header class="header">
         <a href="#" class="logo">Industrious</a>
         <nav class="nav-menu">
-            <h3>Menu</h3> 
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#">Home</a> </li>
-                <li class="nav-list-item"><a href="#">Elements</a></li>
-                <li class="nav-list-item"><a href="#">Generic</a></li>
-            </ul>
+            <p ><a class="list-item" href="#">Menu</a></p>
+            
+           <ul class="menu-list"> 
+               <li class="list-item menu-list-item"><a  class="link" href="#">Home</a></li>
+               <li class="list-item menu-list-item"><a  class="link" href="#">Elements</a></li>
+               <li class="list-item menu-list-item"><a class="link"  href="#">Generic</a></li>
+           </ul>
         </nav>
     </header>
-    <section class="banner-wrapper ">
+    
+    <section class="banner-wrapper white">
+        
         <video autoplay loop muted class="banner-video">
             <source src="./assets/video/banner.mp4" alt="Banner video" autoplay loop muted>
-
-            <!--TODO: optimize video formats-->
         </video>
+            <!--TODO: optimize video formats-->
+        <div class="banner-article-wrapper">
         <article class="banner-article container" >
             <h1>INDUSTRIOUS</h1>
-            <p>A responsive business oriented template with a video background
-                designed by TEMPLATED and released under the Creative Commons License.</p>
+            <p>A responsive business oriented template with a video background designed by TEMPLATED and released under the Creative Commons License.</p>
         </article>
+        </div>
+ 
     </section>
         
     
-    <section class="technology-wrapper container">
+    <section class="technology-wrapper grey container">
         <article class="main-article">
             <h2>SEM TURPIS AMET SEMPER</h2>
             <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
@@ -71,7 +75,7 @@
             </div>
         </section>
     </section>
-    <section class="paralax-wrapper">
+    <section id="paralax" class="paralax-wrapper white">
         <article class="main-article container">
             <h2>CURABITUR ULLAMCORPER ULTRICIES</h2>
             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.
@@ -79,7 +83,7 @@
             </p>
         </article>
     </section>
-    <section class="feedback-wrapper container">
+    <section class="feedback-wrapper grey container">
         <article class="main-article">
             <h2>FAUCIBUS CONSEQUAT LOREM</h2>
             <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
@@ -117,7 +121,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer white">
         <div class="footer-grid container">
             <article class="footer-article">
             <h3>ACCUMSAN MONTES VIVERRA</h3>
@@ -135,10 +139,10 @@
         <div class="media-link-list">
             <h3>MAGNA SED IPSUM</h3>
             <ul>
-                <li class="list-item">Twitter</li>
-                <li class="list-item">Facebook</li>
-                <li class="list-item">Instagram</li>
-                <li class="list-item">Github</li>
+                <li class="list-item"><img src="./assets/icons/twitter.svg" alt="" class="web-icon"> Twitter</li>
+                <li class="list-item"><img src="./assets/icons/facebook.svg" alt="" class="web-icon">Facebook</li>
+                <li class="list-item"><img src="./assets/icons/instagram.svg" alt="" class="web-icon">Instagram</li>
+                <li class="list-item"><img src="./assets/icons/gitlab.svg" alt="" class="web-icon">Github</li>
             </ul>
         </div>
         <p class="footer-credits">© Untitled. Photos Unsplash, Video Coverr.</p>
