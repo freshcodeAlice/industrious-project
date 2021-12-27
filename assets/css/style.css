@@ -2,7 +2,7 @@
 
 /*Fonts*/
 /*font-family: "Raleway", sans-serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
 
 /*
     Mobile        mb 	    ≤700px
@@ -11,7 +11,7 @@
 */
 
 :root {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   background-color: #ffffff8f;
   background-blend-mode: screen;
   background-attachment: fixed;
-  height: 300vh;
+  /* height: 300vh; */
 }
 
 @media screen and (max-width: 700px) {
@@ -66,71 +66,100 @@ header {
 }
 
 .menu {
+  /* color: rgba(135, 135, 135, 0.871); */
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.menu-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.menu-button {
+  line-height: 5vh;
+  padding-right: 1rem;
+  text-align: end;
+  display: inline-block;
+  vertical-align: 50%;
+  background-color: black;
   color: rgba(135, 135, 135, 0.871);
-  /* width: 25rem; */
+  overflow: hidden;
 }
 
-.menu-link,
-.menu-list a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu-link:hover,
-.menu-list a:hover {
+.menu-button:hover {
   color: #fff;
 }
 
-.menu-link {
-  padding: 1.25rem;
-  line-height: inherit;
-  text-align: end;
+.menu-checkbox:checked + .menu-button {
+  color: #000;
 }
 
-.menu-link::before {
-  content: "III";
+.menu-button::before {
+  content: 'III';
   display: inline-block;
   transform: rotate(90deg);
   margin-right: 0.5em;
 }
 
-.menu-checkbox {
+.menu-checkbox:checked + .menu-button::after {
+  content: 'x';
+  font-weight: 800;
+  color: rgba(135, 135, 135, 0.871);
+}
+
+.menu-checkbox:checked + .menu-button:hover::after {
+  color: #fff;
 }
 
 .menu-list {
-  /* display: none; */
-  display: block;
-
+  display: none;
+  width: 0;
+  /*padding-top: 7rem;
+  padding-left: 2rem;
+  padding-right: 2rem; */
   background-color: #000;
-
-  position: fixed;
-
+  height: 100vh;
+  transition: width 200ms 5s ease;
+  position: relative;
+  top: 0;
   right: 0;
-
-  background-color: inherit;
-  z-index: 3000;
 }
 
-/* .menu-link:focus ~ .menu-list {
-} */
+.menu-checkbox:checked ~ .menu-list {
+  width: 15rem;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.menu-item {
+  width: 100%;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: rgba(135, 135, 135, 0.871);
+}
+.menu-list a:hover {
+  color: #fff;
+}
 .banner-wrapper {
   margin-top: 5vh;
   position: relative;
   min-height: 25rem;
-  max-height: 30%;
-  background-image: url("../img/banner.jpg");
+  max-height: 50%;
+  background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
   color: #fff;
-}
-
-@media screen and (min-width: 700px) {
-  .banner-wrapper {
-    min-height: 30rem;
-    max-height: 35rem;
-  }
 }
 
 .banner-video {
@@ -158,4 +187,8 @@ header {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.banner-article {
+  align-items: center;
 }
