@@ -69,6 +69,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     transition: color linear 0.2s;
     transition:font-weight linear 0.2s;
 }
@@ -241,12 +242,9 @@ a{
 
 .footer{
     font-size: 0.6rem;
-
     width: 100%;
+    line-height: 1.5;
     background: #000;
-
-    font-size: 0.8rem;
-/*     line-height: 1.3; */
 
     display: flex;
     justify-content: center;
@@ -255,12 +253,24 @@ a{
 }
 .footer h3{
     padding-bottom: 1em;
+    font-weight: bolder;
 }
 .footer-grid{
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
 
-    grid-gap: 1em;
+    grid-column-gap: 2rem;
+}
+.footer .list-item{
+    height: inherit;
+    justify-content: start;
+    text-align: left;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+.footer-list li+li{
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 .footer .list-item:hover{
     transition: color linear 0.2s;
@@ -277,7 +287,8 @@ a{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 .web-icon{
-    border: 1px solid red;
+    height: 0.9rem;
+
 }
 .container{
     width: 70vw;
