@@ -12,14 +12,17 @@
 
 :root {
   font-family: 'Raleway', sans-serif;
+
+  /*Colors*/
+  --special-gray: rgba(135, 135, 135, 0.871);
 }
 
 body {
   background-image: url(../img/bg.jpg);
+  background-size: cover;
   background-color: #ffffff8f;
   background-blend-mode: screen;
   background-attachment: fixed;
-  /* height: 300vh; */
 }
 
 @media screen and (max-width: 700px) {
@@ -66,7 +69,6 @@ header {
 }
 
 .menu {
-  /* color: rgba(135, 135, 135, 0.871); */
   position: absolute;
   right: 0;
   top: 0;
@@ -87,7 +89,7 @@ header {
   display: inline-block;
   vertical-align: 50%;
   background-color: black;
-  color: rgba(135, 135, 135, 0.871);
+  color: var(--special-gray);
   overflow: hidden;
 }
 
@@ -108,8 +110,9 @@ header {
 
 .menu-checkbox:checked + .menu-button::after {
   content: 'x';
+  font-size: 1.5rem;
   font-weight: 800;
-  color: rgba(135, 135, 135, 0.871);
+  color: var(--special-gray);
 }
 
 .menu-checkbox:checked + .menu-button:hover::after {
@@ -118,38 +121,44 @@ header {
 
 .menu-list {
   display: none;
-  width: 0;
-  /*padding-top: 7rem;
-  padding-left: 2rem;
-  padding-right: 2rem; */
+  width: 15rem;
   background-color: #000;
   height: 100vh;
-  transition: width 200ms 5s ease;
   position: relative;
   top: 0;
   right: 0;
+  left: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: width 200ms 5s ease;
 }
 
 .menu-checkbox:checked ~ .menu-list {
-  width: 15rem;
-  position: relative;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .menu-item {
   width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.menu-list a {
+.menu-item:nth-last-child(n + 2) {
+  border-bottom: 1px solid var(--special-gray);
+}
+
+.menu-item a {
   text-decoration: none;
   color: rgba(135, 135, 135, 0.871);
 }
+
 .menu-list a:hover {
   color: #fff;
 }
+
 .banner-wrapper {
   margin-top: 5vh;
   position: relative;
@@ -184,7 +193,7 @@ header {
 }
 
 .max-width {
-  max-width: 60rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
 }
