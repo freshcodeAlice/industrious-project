@@ -114,6 +114,9 @@ header {
 
 .menu-checkbox:checked + .menu-button {
   color: #000;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .menu-button::before {
@@ -264,7 +267,7 @@ header {
   grid-column-start: 2;
   grid-column-end: 3;
   color: var(--dark-gray);
-  padding-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .card-wrapper {
@@ -373,11 +376,20 @@ header {
   padding: 1rem;
   display: grid;
   grid-template-columns: 5rem auto;
+  align-items: center;
+  gap: 1rem;
 }
 
-.feedback-card blockquote {
+.feedback-card > blockquote {
   border-left: 0.2rem solid var(--special-gray);
   color: var(--special-gray);
+  font-style: italic;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 1.5rem;
+}
+
+.feedback-card > blockquote > p {
 }
 
 .feedback-author-img {
@@ -388,15 +400,22 @@ header {
   border-radius: 50%;
 }
 
+.feedback-author-credits {
+  font-size: 0.8em;
+}
+
+.feedback-author-credits span {
+  color: #ce1b28;
+}
+
 .main-article {
   grid-column-start: 2;
   grid-column-end: 3;
   text-align: center;
-  /* margin-top: 2rem;
-  margin-bottom: 2rem; */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 25vh;
 }
 
 .main-article h2 {
