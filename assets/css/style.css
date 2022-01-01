@@ -1,10 +1,12 @@
 @import url(./reset.css);
 
-/*Fonts*/
+/*FONTS*/
 /*font-family: "Raleway", sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
 /*
+    BREAKPOINTS
+
     Mobile        mb 	    ≤700px
     Tablet        tb 	    ≤1200px
     Desktop 	    ds 	    >1200px
@@ -13,9 +15,14 @@
 :root {
   font-family: 'Raleway', sans-serif;
 
+  /*VARIABLES*/
   /*Colors*/
   --special-gray: rgba(135, 135, 135, 0.871);
   --dark-gray: rgb(80, 80, 80);
+  --base-dark: #000;
+  --base-white: #fff;
+  --special-white: rgba(250, 250, 250, 0.89);
+  --special-red: rgb(208, 27, 39);
 
   /*Sizes*/
   --grid-aside-collumn: 10vw;
@@ -24,7 +31,7 @@
 body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  background-color: rgba(250, 250, 250, 0.89);
+  background-color: var(--special-white);
   background-blend-mode: screen;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -56,11 +63,11 @@ header {
   position: fixed;
   height: 5vh;
   max-width: 100%;
-  background: #000;
+  background: var(--base-dark);
   left: 0;
   right: 0;
   top: 0;
-  color: #fff;
+  color: var(--base-white);
   grid-column-start: 1;
   grid-column-end: 4;
   display: flex;
@@ -103,17 +110,17 @@ header {
   text-align: end;
   display: inline-block;
   vertical-align: 50%;
-  background-color: black;
+  background-color: var(--base-dark);
   color: var(--special-gray);
   overflow: hidden;
 }
 
 .menu-button:hover {
-  color: #fff;
+  color: var(--base-white);
 }
 
 .menu-checkbox:checked + .menu-button {
-  color: #000;
+  color: var(--base-dark);
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -133,13 +140,13 @@ header {
 }
 
 .menu-checkbox:checked + .menu-button:hover::after {
-  color: #fff;
+  color: var(--base-white);
 }
 
 .menu-list {
   display: none;
   width: 15rem;
-  background-color: #000;
+  background-color: var(--base-dark);
   height: 100vh;
   position: relative;
   top: 0;
@@ -147,8 +154,6 @@ header {
   left: 0;
   padding-left: 2rem;
   padding-right: 2rem;
-
-  /* transition: display 200ms 5s ease; */
 }
 
 .menu-checkbox:checked ~ .menu-list {
@@ -173,7 +178,7 @@ header {
 }
 
 .menu-list a:hover {
-  color: #fff;
+  color: var(--base-white);
 }
 
 .banner-wrapper {
@@ -186,7 +191,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  color: #fff;
+  color: var(--base-white);
   grid-column-start: 1;
   grid-column-end: 4;
   display: grid;
@@ -197,7 +202,7 @@ header {
 }
 
 .banner-wrapper::before {
-  background: #000;
+  background: var(--base-dark);
   content: '';
   display: block;
   height: 100%;
@@ -209,7 +214,11 @@ header {
 }
 
 .banner-wrapper::after {
-  background: linear-gradient(135deg, #ce1b28 0%, #000 74%);
+  background: linear-gradient(
+    135deg,
+    var(--special-red) 0%,
+    var(--base-dark) 74%
+  );
   content: ' ';
   display: block;
   height: 100%;
@@ -295,15 +304,14 @@ header {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--base-white);
   text-align: center;
   min-height: 35vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
 .card * {
@@ -334,7 +342,7 @@ header {
   background-repeat: no-repeat;
   text-align: center;
   min-height: 30vh;
-  color: #fff;
+  color: var(--base-white);
   display: grid;
   grid-template-columns: var(--grid-aside-collumn) auto var(
       --grid-aside-collumn
@@ -346,6 +354,7 @@ header {
   grid-column-start: 2;
   grid-column-end: 3;
   padding-bottom: 5rem;
+  min-height: 30vh;
 }
 
 .feedback-list {
@@ -372,7 +381,7 @@ header {
 }
 
 .feedback-card {
-  background-color: #fff;
+  background-color: var(--base-white);
   padding: 1rem;
   display: grid;
   grid-template-columns: 5rem auto;
@@ -402,13 +411,13 @@ header {
 }
 
 .feedback-author-credits span {
-  color: #ce1b28;
+  color: var(--special-red);
 }
 
 .footer {
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: #000;
+  background-color: var(--base-dark);
   font-size: inherit;
   color: var(--special-gray);
   display: grid;
@@ -417,17 +426,9 @@ header {
     );
 }
 
-/* @media (min-width: 701px) and (max-width: 1200px) {
-  .footer {
-    grid-template-columns: var(--grid-aside-collumn) 1fr 1fr var(
-        --grid-aside-collumn
-      );
-  }
-} */
-
 .footer h3 {
   font-size: 1em;
-  color: #fff;
+  color: var(--base-white);
   text-transform: uppercase;
   padding-bottom: 1em;
 }
@@ -439,7 +440,7 @@ header {
 }
 
 .footer a:hover {
-  color: #ce1b28;
+  color: var(--base-red);
 }
 
 .footer-content {
