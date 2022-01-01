@@ -144,7 +144,10 @@ header {
 }
 
 .menu-list {
-  display: none;
+  visibility: hidden;
+  transform: translateX(20rem);
+  transition: transform 0.5s ease, visibility 0.5s;
+  transition: display 0.5s;
   width: 15rem;
   background-color: var(--base-dark);
   height: 100vh;
@@ -157,6 +160,9 @@ header {
 }
 
 .menu-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.5s ease, visibility 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -202,6 +208,8 @@ header {
 }
 
 .banner-wrapper::before {
+  transition: opacity 3s ease;
+  transition-delay: 1.25s;
   background: var(--base-dark);
   content: '';
   display: block;
