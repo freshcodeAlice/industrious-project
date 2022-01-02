@@ -107,7 +107,7 @@ nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    grid-gap: 2.5vw;
 }
 
 .card {
@@ -123,4 +123,17 @@ nav {
 .card-image {
     width: 25%;
     height: 25%;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
 }
