@@ -103,18 +103,19 @@ a {
 .technology-wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    
+    color: #555555;
 }
 .main-article{
-    grid-column-start: 3;
-    grid-column-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
-    margin: 10% 0;
+    margin: 5% 0;
 }
 .main-article > h2 {
     font-size: 2.25rem;
+    margin-bottom: 1vw;
 }
 
 
@@ -128,18 +129,32 @@ a {
     grid-row-gap: 3vw;
     grid-column-gap: 2vw;
 }
-
+.max-width-container{
+    background-color: rgba(255, 255, 255, 0.336);
+    background-blend-mode: overlay;
+}
 .card{
     align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    padding: 10%;
-    text-align: center;
+    border-radius: 2%;
+    padding: 20% 10%;
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: -4px 0px 18px 7px rgba(0,0,0,0.19);
 }
 
-/* .card-image{
-    max-height: 30%;
-    max-width: 30%;
-} */
+.card-image{
+    height: 40%;
+    width: 40%;
+    padding-bottom: 5%;
+}
+.card > h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10% 0;
+}
+.card > p{
+    margin: 0 0 2rem 0;
+}
