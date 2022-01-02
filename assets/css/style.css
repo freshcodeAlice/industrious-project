@@ -83,7 +83,24 @@ nav {
 }
 
 .technology-wrapper {
-    margin: 8% auto;
+    margin: 6% auto 2%;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 8%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.8;
+}
+
+.main-article h2 {
+    font-size: 2rem;
+    margin-bottom: 3%;
 }
 
 .card-wrapper {
