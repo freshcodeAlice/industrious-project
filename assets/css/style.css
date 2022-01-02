@@ -82,7 +82,7 @@ nav {
     line-height: 1.5;
 }
 
-.technology-wrapper {
+.technology-wrapper, .feedback-wrapper{
     margin: 6% auto 2%;
 }
 
@@ -102,7 +102,7 @@ nav {
     margin-bottom: 3%;
 }
 
-.card-wrapper {
+.card-wrapper, .feedback-card-wrapper {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -142,11 +142,18 @@ nav {
 
 .paralax-wrapper {
     min-height: 35vh;
-    background-color: rgb(167, 18, 18);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../img/paralaxbgim.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.feedback-card-wrapper {
+    grid-template-rows: 1fr;
+}
+
