@@ -18,7 +18,27 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+nav {
+    color:white;
+    opacity: 0.5;
+    padding-right: 1%;
 }
 
 .banner-wrapper {
@@ -27,6 +47,16 @@ header {
     min-height: 30rem;
     max-height: 35rem;
     overflow: hidden;
+}
+
+.banner-wrapper::before {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 0;
+    background: rgb(127,32,39);
+    background: linear-gradient(90deg, rgba(127,32,39,0.9444152661064426) 0%, rgba(0,0,0,0.6446953781512605) 66%);
+    z-index: 2;
 }
 
 .max-width {
@@ -50,4 +80,24 @@ header {
     font-size: 1.5rem;
     opacity: 0.5;
     line-height: 1.5;
+}
+
+.technology-wrapper {
+    margin: 8% auto;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 38vh;
 }
