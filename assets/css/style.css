@@ -127,7 +127,7 @@ nav {
     height: 25%;
 }
 
-.card h3 {
+h3 {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -195,3 +195,29 @@ nav {
     color:crimson;
     font-weight: bold;
 }
+
+footer {
+    height: 50vh;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-wrapper { 
+    margin: 0 auto;
+    padding-top: 6%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr;
+    grid-gap: 3vw;
+
+}
+
+.footer-article {
+    line-height: 1.5rem;
+}
+
+
