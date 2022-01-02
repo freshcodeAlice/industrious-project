@@ -257,7 +257,13 @@ a{
 }
 .footer-grid{
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+
+    grid-column-gap: 2rem;
+}
+.footer-list-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     grid-column-gap: 2rem;
 }
@@ -298,4 +304,31 @@ a{
     
 }
 
+@media screen and (max-width: 700px){
+    .container{
+        width: 95vw;
+    }
+    .feedback-wrapper-item{
+        grid-template-columns: 1fr;
+    }
 
+    .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .footer-grid{
+        display: initial;
+    }
+    .footer-list-media{
+        padding-top: 1.2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+
+    }
+    .media-link-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
