@@ -103,21 +103,27 @@ a {
 .technology-wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    background-color: rgba(255, 255, 255, 0.404);
+    
 }
 .main-article{
     grid-column-start: 3;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
+    margin: 10% 0;
 }
+.main-article > h2 {
+    font-size: 2.25rem;
+}
+
 
 .card-wrapper{
     grid-column-start: 2;
     grid-column-end: 9;
     grid-row-start: 3;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-row-gap: 3vw;
     grid-column-gap: 2vw;
@@ -128,6 +134,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
+    align-items: center ;
+    padding: 10%;
+    text-align: center;
 }
+
+/* .card-image{
+    max-height: 30%;
+    max-width: 30%;
+} */
