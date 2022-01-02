@@ -146,6 +146,7 @@ a{
     padding: 1em;
 }
 .main-article>h2{
+    text-align: center;
     font-size: 1.5rem;
     padding-bottom: 0.5em;
 }
@@ -308,7 +309,9 @@ a{
 
 @media screen and (max-width: 700px){
     .container{
-        width: 95vw;
+        width: 90vw;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .banner-wrapper video{
         display: none;
@@ -321,7 +324,10 @@ a{
     }
 
     .banner-article{  
+        padding-right: 3em;
+        padding-left: 3em;
         font-size: 1rem;
+
         line-height: 1.3rem;
     }
     .banner-article h1{
@@ -333,6 +339,11 @@ a{
 
     .card-wrapper{
         grid-template-columns: 1fr;
+    }
+    .paralax-wrapper{
+        width: 100%;
+        height: 15em;
+        max-height: 20em;    
     }
     .footer-grid{
         display: initial;
@@ -350,4 +361,5 @@ a{
         justify-content: center;
         align-items: center;
     }
+
 }
