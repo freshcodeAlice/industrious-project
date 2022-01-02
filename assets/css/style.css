@@ -1,5 +1,19 @@
 @import url(./reset.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+/*=====================COMMON STYLES START======================*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   background-image: url(../img/bg.jpg);
@@ -8,6 +22,7 @@ body {
   background-attachment: fixed;
   font-size: 16px;
 }
+/*=====================COMMON STYLES END======================*/
 header {
   position: fixed;
   height: 5.7vh;
@@ -27,7 +42,6 @@ header {
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: 600;
-  padding: 0 1.25rem;
   color: #bbbbbb;
 }
 .header > nav:hover {
@@ -43,6 +57,39 @@ header {
 .logo:hover {
   text-decoration: none;
   cursor: pointer;
+}
+.nav-list a {
+  padding: 10px 40px;
+}
+.nav-list a:hover,
+.nav-list li:focus-within > a {
+  background-color: #ce1b28;
+  color: rgb(255, 255, 255);
+}
+.nav-list li {
+  position: relative;
+}
+.nav-list li:hover > .dropmenu-wrap,
+.nav-list li:focus-within > .dropmenu-wrap {
+  visibility: visible;
+}
+.dropmenu-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  visibility: hidden;
+}
+.dropmenu {
+  background: #111111;
+}
+.nav-list li:hover,
+.nav-list li:focus-within {
+  visibility: visible;
+}
+.dropmenu a {
+  width: 100%;
+  padding: 15px 20px;
 }
 .banner-wrapper {
   display: flex;
@@ -93,11 +140,10 @@ header {
 }
 .max-width {
   margin: 0 auto;
-  width: 75rem;
+  width: 82rem;
   max-width: calc(100% - 6rem);
 }
 .main-article {
-  margin-top: 8rem;
   margin-bottom: 3rem;
 }
 .main-article h2 {
@@ -153,7 +199,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8rem;
-  margin: 8rem 0 6rem 0;
+  margin: 8rem 0 8rem 0;
 }
 .special-article {
   text-align: center;
@@ -172,4 +218,116 @@ header {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.65;
+}
+
+.feedback-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.person-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+.person-card {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  margin: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 3rem;
+}
+.person-card > p {
+  border-left: solid 0.5rem;
+  padding: 1rem 0 1rem 2rem;
+  width: 14rem;
+  color: #444444;
+  line-height: 1.65;
+  margin: 0 0 2rem 0;
+}
+.person-card img {
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.person-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.person-name p {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+}
+.footer-content {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8rem 0 6rem 0;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  margin: 2rem 0 2rem 0;
+}
+.content h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+}
+.foote-information {
+  width: 37rem;
+  margin: 0 0 2rem 0;
+}
+.foote-information p {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.footer-links li:nth-child(n + 2) {
+  border-top: solid 1px;
+}
+.footer-links li {
+  padding-bottom: 0.75rem;
+}
+.footer-links li:nth-child(n + 2) {
+  padding-top: 0.75rem;
+}
+.footer-links a:hover,
+.social-icons a:hover {
+  color: #ce1b28;
+}
+.icon-img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 15px;
+  background-color: black;
+  border-radius: 2px;
+}
+.icon-img:hover {
+  box-shadow: 0 0 15px #ce1b28;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.social-icons li {
+  padding-bottom: 1rem;
+}
+.address {
+  text-align: center;
 }

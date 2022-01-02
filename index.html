@@ -1,128 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Industrious</a>
-        <nav>Menu</nav>
+      <a href="#" class="logo">Industrious</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#">Menu</a>
+            <div class="dropmenu-wrap">
+              <ul class="dropmenu">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Generic</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="banner-wrapper">
-        <video autoplay loop muted class="banner-video">
-            <source src="./assets/video/banner.mp4" alt="Banner video" autoplay loop muted>
-            <!--TODO: optimize video formats-->
-        </video>
-        <article class="banner-article max-width">
-            <h1>INDUSTRIOUS</h1>
-            <p>A responsive business oriented template with a video background
-                designed by TEMPLATED and released under the Creative Commons License.</p>
-        </article>
+      <video autoplay loop muted class="banner-video">
+        <source
+          src="./assets/video/banner.mp4"
+          alt="Banner video"
+          autoplay
+          loop
+          muted
+        />
+      </video>
+      <article class="banner-article max-width">
+        <h1>INDUSTRIOUS</h1>
+        <p>
+          A responsive business oriented template with a video background
+          designed by TEMPLATED and released under the Creative Commons License.
+        </p>
+      </article>
     </section>
     <section class="technology-wrapper max-width">
-        <article class="main-article">
-            <h2>SEM TURPIS AMET SEMPER</h2>
-            <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
-        </article>
-        <section class="card-wrapper">
-            <div class="card">
-                <img src="./assets/img/card.jpg" class="card-image" />
-                <h3>FEUGIAT CONSEQUAT</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img/file.jpg" class="card-image" />
-                <h3>ANTE SEM INTEGER</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img/diskette.jpg" class="card-image" />
-                <h3>IPSUM CONSEQUAT</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img/schedule.jpg" class="card-image" />
-                <h3>INTERDUM GRAVIDA</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus..</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img/letter.jpg" class="card-image" />
-                <h3>FAUCIBUS CONSEQUAT</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img/QR code (1).jpg" class="card-image" />
-                <h3>ACCUMSAN VIVERRA</h3>
-                <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus..</p>
-            </div>
-        </section>
+      <article class="main-article">
+        <h2>SEM TURPIS AMET SEMPER</h2>
+        <p>
+          In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim
+          aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan
+          erat tempus amet porttitor.
+        </p>
+      </article>
+      <section class="card-wrapper">
+        <div class="card">
+          <img src="./assets/img/card.jpg" class="card-image" />
+          <h3>FEUGIAT CONSEQUAT</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/img/file.jpg" class="card-image" />
+          <h3>ANTE SEM INTEGER</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/img/diskette.jpg" class="card-image" />
+          <h3>IPSUM CONSEQUAT</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/img/schedule.jpg" class="card-image" />
+          <h3>INTERDUM GRAVIDA</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus..
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/img/letter.jpg" class="card-image" />
+          <h3>FAUCIBUS CONSEQUAT</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/img/QR code (1).jpg" class="card-image" />
+          <h3>ACCUMSAN VIVERRA</h3>
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus..
+          </p>
+        </div>
+      </section>
     </section>
     <section class="paralax-wrapper">
-        <article class="special-article max-width">
-            <h2>CURABITUR ULLAMCORPER ULTRICIES</h2>
-            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-        </article>
+      <article class="special-article max-width">
+        <h2>CURABITUR ULLAMCORPER ULTRICIES</h2>
+        <p>
+          Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio
+          porttitor sem non mi integer non faucibus ornare mi ut ante amet
+          placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
+          varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum
+          ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+          iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed
+          amet praesent. Nunc lacinia ante nunc ac gravida.
+        </p>
+      </article>
     </section>
     <section class="feedback-wrapper max-width">
-        <article class="main-article">
-            <h2>SEM TURPIS AMET SEMPER</h2>
-            <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
-        </article>
-        <section class="feedback-wrapper">
-            <div class="feedback-card">
-                <blockquote>
-                    <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
-            </div>
-            <div class="feedback-card">
-                <blockquote>
-                    <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
-            </div>
-            <div class="feedback-card">
-                <blockquote>
-                    <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
-            </div>
-        </section>
+      <article class="main-article">
+        <h2>SEM TURPIS AMET SEMPER</h2>
+        <p>
+          In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim
+          aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan
+          erat tempus amet porttitor.
+        </p>
+      </article>
+      <section class="person-wrapper">
+        <div class="person-card">
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+          <div class="person-name">
+            <img src="./assets/img/pic01.webp" class="person-author-img" />
+            <p class="person-author-credits">- Jane Doe CEO - ABC Inc</p>
+          </div>
+        </div>
+        <div class="person-card">
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+          <div class="person-name">
+            <img src="./assets/img/pic02.webp" class="person-author-img" />
+            <p class="person-author-credits">- Jane Doe CEO - ABC Inc</p>
+          </div>
+        </div>
+        <div class="person-card">
+          <p>
+            Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing
+            gravida odio porttitor sem non mi integer non faucibus.
+          </p>
+          <div class="person-name">
+            <img src="./assets/img/pic03.webp" class="person-author-img" />
+            <p class="person-author-credits">- Jane Doe CEO - ABC Inc</p>
+          </div>
+        </div>
+      </section>
     </section>
-    <footer class="footer max-width">
-        <article class="footer-article">
-            <h3>ACCUMSAN MONTES VIVERRA</h3>
-            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-        </article>
-        <div class="footer-list">
-            <h3>SEM TURPIS AMET SEMPER</h3>
+    <footer class="footer">
+      <div class="footer-content max-width">
+        <div class="content">
+          <section class="foote-information">
+            <h3>Accumsan montes viverra</h3>
+            <p>
+              Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+              odio porttitor sem non mi integer non faucibus ornare mi ut ante
+              amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+              accumsan varius montes viverra nibh in adipiscing. Lorem ipsum
+              dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+              adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu
+              faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac
+              gravida.
+            </p>
+          </section>
+          <section class="footer-links">
+            <h3>Sem turpis amet semper</h3>
             <ul>
-                <li class="list-item">Lorem ipsum dolor sit.</li>
-                <li class="list-item">Ex incidunt voluptas ipsa!</li>
-                <li class="list-item">Harum repellendus architecto deserunt.</li>
-                <li class="list-item">Consequuntur quos nobis inventore.</li>
+              <li><a href="#">Dolor pulvinar sed etiam.</a></li>
+              <li><a href="#">Etiam vel lorem sed amet.</a></li>
+              <li><a href="#">Felis enim feugiat viverra.</a></li>
+              <li><a href="#">Dolor pulvinar magna etiam.</a></li>
             </ul>
-        </div>
-        <div class="media-link-list">
-            <h3>SEM TURPIS AMET SEMPER</h3>
+          </section>
+          <section class="social-icons">
+            <h3>Magna sed ipsum</h3>
             <ul>
-                <li class="list-item">Lorem ipsum dolor sit.</li>
-                <li class="list-item">Ex incidunt voluptas ipsa!</li>
-                <li class="list-item">Harum repellendus architecto deserunt.</li>
-                <li class="list-item">Consequuntur quos nobis inventore.</li>
+              <li>
+                <a class="icon" href="#"
+                  ><img
+                    class="icon-img"
+                    width="1"
+                    height="1"
+                    loading="lazy"
+                    src="./assets/img/twitter.svg"
+                    alt="twitter"
+                  />Twitter</a
+                >
+              </li>
+              <li>
+                <a class="icon" href="#"
+                  ><img
+                    class="icon-img"
+                    width="1"
+                    height="1"
+                    loading="lazy"
+                    src="./assets/img/facebook.svg"
+                    alt="facebook"
+                  />Facebook</a
+                >
+              </li>
+              <li>
+                <a class="icon" href="#"
+                  ><img
+                    class="icon-img"
+                    width="1"
+                    height="1"
+                    loading="lazy"
+                    src="./assets/img/instagram.svg"
+                    alt="instagram"
+                  />Instagram</a
+                >
+              </li>
+              <li>
+                <a class="icon" href="#"
+                  ><img
+                    class="icon-img"
+                    width="1"
+                    height="1"
+                    loading="lazy"
+                    src="./assets/img/github.svg"
+                    alt="github"
+                  />Github</a
+                >
+              </li>
             </ul>
+          </section>
         </div>
-        <p class="footer-credits">© Untitled. Photos Unsplash, Video Coverr.</p>
+        <p class="address">© Untitled. Photos Unsplash, Video Coverr.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
