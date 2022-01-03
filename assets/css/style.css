@@ -1,5 +1,5 @@
 @import url(./reset.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 /*=====================COMMON STYLES START======================*/
 *,
 ::before,
@@ -18,8 +18,10 @@ body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   background-image: url(../img/bg.jpg);
   background-color: #ffffffcc;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 16px;
 }
 /*=====================COMMON STYLES END======================*/
