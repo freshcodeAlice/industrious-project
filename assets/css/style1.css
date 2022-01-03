@@ -27,6 +27,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 a {
     color: inherit;
@@ -49,7 +51,34 @@ a {
 .logo{
     color: white;
 }
-
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu::before{
+    content: url('../img/icons/menu.svg');
+    margin: 0.5rem 0.5rem 0 0;
+}
+.menu-ul{
+    position: absolute;
+    top: 3.5rem;
+    width: 20%;
+    color: var(--color-text);
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-background);
+    z-index: 3;
+}
+.menu-item {
+    margin-left: 1rem;
+    padding: 1rem;
+    border-bottom: 1px var(--color-text) solid;
+}
+.menu-item:nth-child(3){
+    border: none;
+}
 .banner-wrapper{
     width: 100%;
     position: relative;
