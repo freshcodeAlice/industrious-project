@@ -167,6 +167,9 @@ a {
     text-align: justify;
     text-align-last: center;
 }
+.card-wrapper .feedback-wrapper{
+    grid-template-rows: 1fr;
+}
 
 .paralax-wrapper{
     background-color: var(--red-color);
@@ -192,7 +195,9 @@ a {
 .feedback-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 10%;
+    padding-bottom: 10%;
 }
 .feedback-card{
     position: relative;
