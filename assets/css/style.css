@@ -18,7 +18,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 3;
+    z-index: 4;
 }
 
 .header {
@@ -47,6 +47,10 @@ nav {
     min-height: 30rem;
     max-height: 35rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-wrapper::after {
@@ -258,6 +262,7 @@ footer {
         background-image: url(../img/banner.jpg);
         background-position: center;
         background-size: cover;
+        overflow: hidden;
     }
     
     .card-wrapper, .feedback-card-wrapper {
