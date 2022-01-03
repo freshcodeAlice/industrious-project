@@ -255,22 +255,30 @@ footer {
         background-position: center;
         background-size: cover;
     }
+    
+    .card-wrapper, .feedback-card-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 
+    .feedback-card-wrapper {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 
+    .footer-wrapper { 
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        max-width: 100vw;
+        padding-left: 10%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer-article{
+        max-width: 80%;
+        margin-bottom: 5%;
+    }
 }
 
 
