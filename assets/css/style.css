@@ -282,11 +282,12 @@ footer {
     }
 
     .footer-wrapper { 
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
+       
         max-width: 100vw;
         padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .footer-article{
