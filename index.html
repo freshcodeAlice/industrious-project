@@ -5,102 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style1.css">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Industrious</a>
-        <nav>Menu</nav>
+        <nav class="menu">
+            <a href="#"> Menu</a> 
+            <div class="burger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+             
+                <ul class="menubox">
+                        <li><a class="menu-item" href="#">Home</a></li>
+                        <li><a class="menu-item" href="#">Elements</a></li>
+                        <li><a class="menu-item" href="#">Generic</a></li>
+                </ul>
+              </div>
+        </nav>
+       
     </header>
+   
+    
     <section class="banner-wrapper">
+        
+         <div class="banner-article-wrapper">
+            <article class="banner-article">
+            <h1>INDUSTRIOUS</h1>
+            <p>A responsive business oriented template with a video background
+                designed by TEMPLATED and released under the Creative Commons License.</p>
+            </article>
+        </div> 
         <video autoplay loop muted class="banner-video">
             <source src="./assets/video/banner.mp4" alt="Banner video" autoplay loop muted>
 
             <!--TODO: optimize video formats-->
         </video>
-        <article class="banner-article">
-            <h1>INDUSTRIOUS</h1>
-            <p>A responsive business oriented template with a video background
-                designed by TEMPLATED and released under the Creative Commons License.</p>
-        </article>
     </section>
-    <section class="technology-wrapper max-width">
+    <section class="technology-wrapper max-width-container">
         <article class="main-article">
             <h2>SEM TURPIS AMET SEMPER</h2>
             <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
         </article>
         <section class="card-wrapper">
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/card-account-details-outline.svg" class="card-image" />
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/file-document-multiple-outline.svg" class="card-image" />
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/content-save.svg" class="card-image" />
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/chart-line.svg" class="card-image" alt="icon paper plane"/>
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/send.svg" class="card-image" >
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
             <div class="card">
-                <img src="" class="card-image" />
+                <img src="./assets/img/icons/qrcode.svg" class="card-image" />
                 <h3>Lorem, ipsum</h3>
                 <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
             </div>
         </section>
     </section>
-    <section class="paralax-wrapper">
+    <section class="paralax-wrapper full-width-container">
         <article class="main-article max-width">
             <h2>SEM TURPIS AMET SEMPER</h2>
-            <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
         </article>
     </section>
-    <section class="feedback-wrapper max-width">
+    <section class="technology-wrapper max-width-container">
         <article class="main-article">
             <h2>SEM TURPIS AMET SEMPER</h2>
             <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
         </article>
-        <section class="feedback-wrapper">
-            <div class="feedback-card">
+        <section class="card-wrapper feedback-wrapper">
+            <div class="feedback-card card">
                 <blockquote>
-                    <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    <p>Nunc laciia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
                 </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
+                <div class="feedback-autors-wrapper">
+                    <div class="img-wrapper">
+                    <img src="./assets/img/feedback/pic01.jpeg" class="feedback-author-img" />
+                    </div>
+                    <p class="feedback-author-credits">
+                        - <span>Jane Doe</span> CEO - ABC Inc</p>
+                </div>
             </div>
-            <div class="feedback-card">
+            <div class="feedback-card card">
                 <blockquote>
                     <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
                 </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
+                <div class="feedback-autors-wrapper">
+                    <div class="img-wrapper">
+                    <img src="./assets/img/feedback/pic03.jpeg" class="feedback-author-img" />
+                    </div>
+                    <p class="feedback-author-credits">
+                        - <span>Jane Doe </span> CEO - ABC Inc</p>
+                </div>
             </div>
-            <div class="feedback-card">
+            <div class="feedback-card card">
                 <blockquote>
                     <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
                 </blockquote>
-                <img src="" class="feedback-author-img" />
-                <p class="feedback-author-credits">
-                    - Jane Doe CEO - ABC Inc</p>
+                <div class="feedback-autors-wrapper">
+                    <div class="img-wrapper">
+                    <img src="./assets/img/feedback/pic02.jpeg" class="feedback-author-img" />
+                    </div>
+                    <p class="feedback-author-credits">
+                        - <span>Jane Doe </span> CEO - ABC Inc</p>
+                </div>
             </div>
         </section>
     </section>
-    <footer class="footer max-width">
+    <footer class="footer full-width-container">
+        <div class="footer-container max-width-container">
         <article class="footer-article">
             <h3>ACCUMSAN MONTES VIVERRA</h3>
             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
@@ -108,22 +141,62 @@
         <div class="footer-list">
             <h3>SEM TURPIS AMET SEMPER</h3>
             <ul>
-                <li class="list-item">Lorem ipsum dolor sit.</li>
-                <li class="list-item">Ex incidunt voluptas ipsa!</li>
-                <li class="list-item">Harum repellendus architecto deserunt.</li>
-                <li class="list-item">Consequuntur quos nobis inventore.</li>
+                <li class="list-item">
+                   <a href="#" class="list-link">Lorem ipsum dolor sit.</a>  
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Ex incidunt voluptas ipsa!</a>
+                    
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Harum repellendus </a>
+                    
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Consequuntur quos nobis inventore.</a>
+                    
+                </li>
             </ul>
         </div>
         <div class="media-link-list">
             <h3>SEM TURPIS AMET SEMPER</h3>
             <ul>
-                <li class="list-item">Lorem ipsum dolor sit.</li>
-                <li class="list-item">Ex incidunt voluptas ipsa!</li>
-                <li class="list-item">Harum repellendus architecto deserunt.</li>
-                <li class="list-item">Consequuntur quos nobis inventore.</li>
+                <li class="list-item">
+                    <a href="#" class="list-link footer-link">
+                        <i>
+                            <img src="./assets/img/icons/twitter.svg" alt="twitter">
+                        </i>
+                        Twitter</a>  
+                 </li>
+                 <li class="list-item">
+                     <a href="#" class="list-link footer-link">
+                        <i>
+                            <img src="./assets/img/icons/facebook.svg" alt="facebook">
+                        </i>
+                        Facebook</a>
+                     
+                 </li>
+                 <li class="list-item">
+                     <a href="#" class="list-link footer-link">
+                         <i>
+                             <img src="./assets/img/icons/instagram.svg" alt="instagram">
+                         </i>
+                         Instagram
+                        </a>
+                     
+                 </li>
+                 <li class="list-item">
+                     <a href="#" class="list-link footer-link">
+                        <i>
+                            <img src="./assets/img/icons/gitlab.svg" alt="gitlab">
+                        </i>
+                        GitLab</a>
+                     
+                 </li>
             </ul>
         </div>
         <p class="footer-credits">© Untitled. Photos Unsplash, Video Coverr.</p>
+    </div>
     </footer>
 </body>
 </html>
