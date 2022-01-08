@@ -23,7 +23,7 @@ body {
     font-size: 1rem;
     line-height: 1.65;
 
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@ a {
 
 .header{
     padding: 0.5rem 1.75rem;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     display: flex;
@@ -200,7 +200,7 @@ a {
     background-color: var(--red-color);
     color: var(--color-text);
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url('/assets/img/parallax.jpg');
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url('/assets/img/cta01.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,6 +216,12 @@ a {
     padding: 0 10%;
     text-align: justify;
     text-align-last: center;
+    color: white;
+    z-index: 2;
+}
+.paralax-wrapper > .main-article > p {
+    color: var(--color-text);
+    z-index: 2;
 }
 /*Second Card block*/
 
@@ -547,7 +553,6 @@ a {
         background-color: inherit;
         display: grid;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr, 10%; */
         grid-gap: 1rem;
         margin: 5%;
         grid-template-areas: 
