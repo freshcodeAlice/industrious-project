@@ -36,10 +36,53 @@ header {
 }
 
 nav {
-    color:white;
-    opacity: 0.5;
-    padding-right: 1%;
+    height: 100%; 
 }
+
+
+
+.nav-list {
+    height: inherit;
+    position: relative;
+    width: 12vw;
+    color: rgba(255, 255, 255, 0.5);
+   
+}
+
+.nl-item {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+.nav-image {
+    width: 1.2rem;
+    height: 1.2rem;
+    opacity: 0.5;
+}
+
+.sub-nav-list {
+    display: none;
+}
+
+.nav-list:hover  .sub-nav-list{
+    position: absolute;
+    top: 5vh;
+    right: -1vw;
+    min-height: 20vh;
+    min-width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-left: 2vw;
+    border-bottom-left-radius: 2%;
+}
+
 
 .banner-wrapper {
     margin-top: 5vh;
@@ -250,6 +293,11 @@ footer {
     color: crimson;
     cursor: pointer;
 }
+.social-img{
+    width: 10%;
+    height: 10%;
+    margin-right: 5%;
+}
 
 .footer-credits {
     font-size: 0.7rem;
@@ -258,6 +306,10 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+    
+    .nav-list {
+        width: 20vw;
+    }
 
     .banner-video {
         display: none;
@@ -268,6 +320,7 @@ footer {
         background-position: center;
         background-size: cover;
         overflow: hidden;
+        min-height: 23rem;
     }
     
     .card-wrapper, .feedback-card-wrapper {
@@ -294,6 +347,14 @@ footer {
         max-width: 80%;
         margin-bottom: 5%;
     }
+
+    .social-img{
+        width: 7%;
+        height: 7%;
+        margin-right: 5%;
+    }
+
+   
 }
 
 
