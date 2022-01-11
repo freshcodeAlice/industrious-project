@@ -145,6 +145,7 @@ header {
   max-width: calc(100% - 6rem);
 }
 .main-article {
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 .main-article h2 {
@@ -200,7 +201,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8rem;
-  margin: 8rem 0 8rem 0;
+  margin-top: 8rem;
 }
 .special-article {
   text-align: center;
@@ -229,7 +230,7 @@ header {
 .person-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 .person-card {
   display: flex;
